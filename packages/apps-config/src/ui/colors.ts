@@ -70,6 +70,7 @@ const chainMoonrock = '#3d1d5a';
 const chainMoonsama = '#000000';
 const chainNeumann = '#A8278C';
 const chainNFTMart = '#815287';
+const chainNodesig = '#000000';
 const chainNodle = '#1ab394';
 const chainOriginTrail = '#FB5DEB';
 const chainOriginTrailTestnet = '#0C0C0C';
@@ -81,7 +82,8 @@ const chainPhala = '#c6fa4c';
 const chainPhoenix = '#d42181';
 const chainPlasm = '#2096F3';
 const chainPolkadex = '#7C30DD';
-const chainPolkadot = '#e6007a';
+// const chainPolkadot = '#e6007a';
+const chainPolkadot = '#000000';
 const chainPolkaFoundry = '#ff527c';
 const chainPolkaSmith = '#0DDDFB';
 const chainPontem = '#A92FAC';
@@ -361,6 +363,7 @@ export const chainColors: Record<string, string> = Object.entries({
   'Neumann Network': chainNeumann,
   'NFTMart Staging': chainNFTMart,
   'NFTMart Testnet': chainNFTMart,
+  Nodesig: chainNodesig,
   'Nodle Parachain': chainNodle,
   'Nodle Testing Parachain': chainNodle,
   Odyssey: nodeOdyssey,

@@ -6,7 +6,7 @@ import type { LinkOption } from './types';
 
 import { defaultT } from '../util';
 import { createCustom, createDev, createOwn } from './development';
-import { prodRelayPolkadot } from './production';
+import { prodChains } from './production';
 import { expandEndpoints } from './util';
 
 export { CUSTOM_ENDPOINT_KEY } from './development';
@@ -19,11 +19,11 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false, w
       isDisabled: false,
       isHeader: true,
       isSpaced: true,
-      text: t('rpc.header.polkadot.relay', 'Polkadot & parachains', { ns: 'apps-config' }),
+      text: t('rpc.header.live', 'Nodesig', { ns: 'apps-config' }),
       textBy: '',
       value: ''
     },
-    ...expandEndpoints(t, [prodRelayPolkadot], firstOnly, withSort),
+    ...expandEndpoints(t, prodChains, firstOnly, withSort),
     {
       isDevelopment: true,
       isDisabled: false,

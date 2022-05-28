@@ -3,8 +3,6 @@
 
 import type { EndpointOption } from './types';
 
-import { POLKADOT_GENESIS } from '../api/constants';
-
 /* eslint-disable sort-keys */
 
 // The available endpoints that will show in the dropdown. For the most part (with the exception of
@@ -15,13 +13,12 @@ import { POLKADOT_GENESIS } from '../api/constants';
 //
 // IMPORTANT: Alphabetical based on text
 
-export const prodRelayPolkadot: EndpointOption = {
-  dnslink: 'polkadot',
-  genesisHash: POLKADOT_GENESIS,
-  info: 'polkadot',
-  text: 'Polkadot',
-  providers: {
-    Parity: 'wss://rpc.polkadot.io'
-  },
-  teleport: [1000]
-};
+export const prodChains: EndpointOption[] = [
+  {
+    info: 'nodesig',
+    text: 'Nodesig',
+    providers: {
+      Nodesig: 'wss://network.nodesig.com'
+    }
+  }
+];
