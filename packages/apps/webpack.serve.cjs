@@ -14,7 +14,11 @@ module.exports = merge(
       hot: true,
       open: false,
       port: 3000,
-      static: path.resolve(__dirname, 'build')
+      static: path.resolve(__dirname, 'build'),
+      allowedHosts: [
+        '.nodesig.com',
+        '.www.nodesig.com'
+      ]
     },
     plugins: [
       new HtmlWebpackPlugin({
