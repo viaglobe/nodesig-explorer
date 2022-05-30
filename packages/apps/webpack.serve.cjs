@@ -16,8 +16,8 @@ module.exports = merge(
       port: 3000,
       static: path.resolve(__dirname, 'build'),
       allowedHosts: [
-        '.nodesig.com',
-        '.www.nodesig.com'
+        '.nodesig.net',
+        '.www.nodesig.net'
       ]
     },
     plugins: [
