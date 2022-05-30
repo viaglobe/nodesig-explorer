@@ -14,7 +14,7 @@ import collator from './collator';
 import contracts from './contracts';
 import council from './council';
 import democracy from './democracy';
-// import explorer from './explorer';
+import explorer from './explorer';
 import extrinsics from './extrinsics';
 import files from './files';
 import gilt from './gilt';
@@ -40,7 +40,7 @@ export default function create (t: TFunction): Routes {
   return [
     accounts(t),
     addresses(t),
-    // explorer(t),
+    explorer(t),
     claims(t),
     poll(t),
     transfer(t),
