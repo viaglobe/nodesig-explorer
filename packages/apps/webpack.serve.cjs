@@ -22,7 +22,7 @@ module.exports = merge(
     },
     plugins: [
       new HtmlWebpackPlugin({
-        PAGE_TITLE: 'Nodesig Portal',
+        PAGE_TITLE: 'Nodesig Explorer',
         inject: true,
         template: path.join(__dirname, 'public/index.html')
       })

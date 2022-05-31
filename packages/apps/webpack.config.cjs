@@ -17,7 +17,7 @@ module.exports = merge(
     devtool: process.env.BUILD_ANALYZE ? 'source-map' : false,
     plugins: [
       new HtmlWebpackPlugin({
-        PAGE_TITLE: 'Nodesig Portal',
+        PAGE_TITLE: 'Nodesig Explorer',
         inject: true,
         template: path.join(context, `${hasPublic ? 'public/' : ''}index.html`)
       })
